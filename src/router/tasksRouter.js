@@ -1,5 +1,4 @@
 const express = require( 'express' ),
-    app = express(),
     tasksrouter = express.Router()
 
 const {
