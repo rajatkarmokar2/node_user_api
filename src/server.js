@@ -63,7 +63,10 @@ const port = process.env.PORT || 5000
 const start = async () => {
     try {
         await connectDB( process.env.MONGO_DB_URL )
-        console.log( 'server started' )
+        // console.log( 'DATABASE CONNECTED' )
+        app.listen( port,( req,res ) => { }
+            // console.log( '\tserver started - 5000\t' ) 
+        )
     } catch ( error ) { console.log( error.code ) }
 }
 start()
